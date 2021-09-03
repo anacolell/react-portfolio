@@ -14,6 +14,7 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 70px;
+  padding-top: 20px;
 
   ${Container}
 `;
