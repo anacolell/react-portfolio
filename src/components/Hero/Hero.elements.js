@@ -1,9 +1,13 @@
 import styled from "styled-components";
 import { Container } from "../../globalStyles";
+import { Link } from "react-router-dom";
 
 export const HeroContainer = styled(Container)`
   background-color: var(--darkblue);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   ${Container}
 `;
@@ -17,7 +21,8 @@ export const HeroContent = styled.section`
   padding-top: 100px;
 
   @media screen and (min-width: 550px) {
-    padding: 120px;
+    padding: 50px;
+    padding-top: 120px;
   }
 `;
 
@@ -61,4 +66,8 @@ export const HeroText = styled.p`
   @media screen and (min-width: 550px) {
     max-width: 60%;
   }
+`;
+
+export const HeroBtnLink = styled(Link)`
+  margin-top: 50px;
 `;

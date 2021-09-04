@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../../globalStyles";
 import {
   HeroContainer,
   HeroContent,
@@ -6,6 +7,7 @@ import {
   HeroSubtitle,
   HeroSubtitle2,
   HeroText,
+  HeroBtnLink,
 } from "./Hero.elements";
 
 export default function Hero() {
@@ -23,6 +25,11 @@ export default function Hero() {
             Officiis perspiciatis aliquam provident.
           </HeroText>
         </HeroContent>
+        <HeroBtnLink to="/work">
+          <Button big fontBig>
+            See my work
+          </Button>
+        </HeroBtnLink>
       </HeroContainer>
     </>
   );

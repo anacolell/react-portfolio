@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import { Button } from "../../globalStyles";
+import { Button, NumberSpan } from "../../globalStyles";
 
 import {
   Nav,
@@ -11,7 +11,6 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavLinkSpan,
   NavItemBtn,
   NavBtnLink,
 } from "./Navbar.elements";
@@ -50,22 +49,22 @@ export default function Navbar() {
             <NavMenu onClick={handleClick} clicked={clicked}>
               <NavItem>
                 <NavLinks to="/about">
-                  <NavLinkSpan>01.</NavLinkSpan>About
+                  <NumberSpan>01.</NumberSpan>About
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/work">
-                  <NavLinkSpan>02.</NavLinkSpan>Work
+                  <NumberSpan>02.</NumberSpan>Work
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/skills">
-                  <NavLinkSpan>03.</NavLinkSpan>Skills
+                  <NumberSpan>03.</NumberSpan>Skills
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/contact">
-                  <NavLinkSpan>04.</NavLinkSpan> Contact
+                  <NumberSpan>04.</NumberSpan> Contact
                 </NavLinks>
               </NavItem>
               <NavItemBtn>

@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  /* z-index: 1; */
+  background-color: var(--darkblue);
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -41,6 +41,11 @@ export const Button = styled.button`
   &:hover {
     background: #133040;
   }
+`;
+
+export const NumberSpan = styled.span`
+  color: var(--green);
+  padding-right: 3px;
 `;
 
 export default GlobalStyle;

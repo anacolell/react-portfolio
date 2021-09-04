@@ -91,11 +91,6 @@ export const NavLinks = styled(Link)`
   }
 `;
 
-export const NavLinkSpan = styled.span`
-  color: var(--green);
-  padding-right: 3px;
-`;
-
 export const NavItemBtn = styled.li`
   @media screen and (max-width: 960px) {
     display: flex;
