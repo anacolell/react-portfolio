@@ -33,9 +33,6 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 960px) {
     display: flex;
     align-items: center;
-    /* position: absolute;
-    top: 0;
-    right: 0; */
     cursor: pointer;
     font-size: 1.5rem;
   }
@@ -47,7 +44,6 @@ export const NavMenu = styled.ul`
   text-align: center;
 
   @media screen and (max-width: 960px) {
-    /* display: flex; */
     flex-direction: column;
     padding-top: 80px;
     width: 100%;
