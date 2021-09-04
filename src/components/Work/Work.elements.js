@@ -4,22 +4,11 @@ export const WorkContent = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 20px;
+  padding: 80px 0px;
 
   @media screen and (min-width: 700px) {
-    padding: 50px;
-  }
-`;
-
-export const WorkTitle = styled.h3`
-  color: var(--lightblue);
-  font-size: 1.3rem;
-  margin-bottom: 60px;
-  font-family: "Montserrat", sans-serif;
-
-  @media screen and (min-width: 700px) {
-    font-size: 1.5rem;
-    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
   }
 `;
 

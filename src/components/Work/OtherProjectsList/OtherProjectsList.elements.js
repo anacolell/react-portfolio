@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ProjectCards = styled.div`
-  width: 95%;
   margin: 0 auto;
   margin-top: 50px;
+  /* margin-bottom: 80px; */
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
@@ -25,6 +25,10 @@ export const Project = styled.a`
   background-color: var(--mediumblue);
   padding: 20px;
   transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;

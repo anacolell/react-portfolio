@@ -13,9 +13,11 @@ export const Project = styled.div`
   flex-direction: column;
   margin-bottom: 60px;
   color: var(--lightblue);
+  transition: all 0.3s ease;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    width: 85%;
+    /* width: 85%; */
     justify-content: space-between;
   }
 `;

@@ -15,17 +15,21 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
 }
+
+body {
+  background-color: var(--darkblue)
+}
 `;
 
 export const Container = styled.div`
   background-color: var(--darkblue);
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 50px;
+  margin: 0 auto;
+  /* margin-right: auto;
+  margin-left: auto; */
+  /* padding: 0 50px; */
   @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
+    width: 80%;
   }
 `;
 
@@ -47,6 +51,18 @@ export const Button = styled.button`
 export const NumberSpan = styled.span`
   color: var(--green);
   padding-right: 3px;
+`;
+
+export const SectionTitle = styled.h3`
+  color: var(--lightblue);
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+
+  @media screen and (min-width: 700px) {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
 `;
 
 export default GlobalStyle;

@@ -54,7 +54,7 @@ export default function Navbar() {
               </NavItem>
               <NavItem>
                 <NavLinks to="/work">
-                  <NumberSpan>02.</NumberSpan>Work
+                  <NumberSpan>02.</NumberSpan>Projects
                 </NavLinks>
               </NavItem>
               <NavItem>
