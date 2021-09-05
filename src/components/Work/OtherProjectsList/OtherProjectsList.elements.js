@@ -17,7 +17,7 @@ export const ProjectCards = styled.div`
   }
 `;
 
-export const Project = styled.a`
+export const Project = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;

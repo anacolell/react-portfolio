@@ -21,14 +21,16 @@ export default function OtherProjectsList() {
       <ProjectCards>
         {otherProjects.map((project) => {
           return (
-            <Project key={project.id} href={project.liveLink} target="_blank">
+            <Project key={project.id}>
               <ProjectInfo>
                 <ProjectTitle>{project.title}</ProjectTitle>
                 <ProjectDescription>{project.description}</ProjectDescription>
                 <ProjectTechnologies>
                   {project.technologies.map((technology) => {
                     return (
-                      <ProjectTechnology>{technology.name}</ProjectTechnology>
+                      <ProjectTechnology key={technology.id}>
+                        {technology.name}
+                      </ProjectTechnology>
                     );
                   })}
                 </ProjectTechnologies>

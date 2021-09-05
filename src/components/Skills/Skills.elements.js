@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 export const SkillsContent = styled.section`
-  display: flex;
-  flex-direction: column;
-  padding: 100px 0px;
-
+  padding: 80px 0px;
   @media screen and (min-width: 700px) {
     width: 80%;
     margin: 0 auto;
@@ -14,6 +11,7 @@ export const SkillsContent = styled.section`
 export const SkillsList = styled.ul`
   width: 100%;
   margin: 0 auto;
+  padding-top: 50px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;

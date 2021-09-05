@@ -5,6 +5,7 @@ import { Hero } from "./components";
 import { Work } from "./components";
 import { Skills } from "./components";
 import { Contact } from "./components";
+import { Footer } from "./components";
 import GlobalStyle from "./globalStyles";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Work />
       <Skills />
       <Contact />
+      <Footer />
     </Router>
   );
 }

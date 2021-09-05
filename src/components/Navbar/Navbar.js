@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Button, NumberSpan } from "../../globalStyles";
+import cv from "../../Documents/cv.pdf";
 
 import {
   Nav,
@@ -69,11 +70,11 @@ export default function Navbar() {
               </NavItem>
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/cv">
+                  <NavBtnLink href={cv} target="_blank">
                     <Button>CV</Button>
                   </NavBtnLink>
                 ) : (
-                  <NavBtnLink to="/cv">
+                  <NavBtnLink href={cv} target="_blank">
                     <Button big fontBig>
                       CV
                     </Button>

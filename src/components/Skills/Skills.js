@@ -14,7 +14,7 @@ export default function Skills() {
           <SkillsList>
             {skillsData.map((skill) => {
               return (
-                <Skill>
+                <Skill key={skill.id}>
                   {skill.logo}
                   <SkillName>{skill.name}</SkillName>
                 </Skill>

@@ -25,9 +25,6 @@ export const Container = styled.div`
   background-color: var(--darkblue);
   width: 100%;
   margin: 0 auto;
-  /* margin-right: auto;
-  margin-left: auto; */
-  /* padding: 0 50px; */
   @media screen and (max-width: 991px) {
     width: 80%;
   }
@@ -58,6 +55,25 @@ export const SectionTitle = styled.h3`
   font-size: 1.3rem;
   margin-bottom: 60px;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+
+  &:before,
+  &:after {
+    border-top: 1px solid var(--green);
+    opacity: 0.3;
+    content: "";
+    position: relative;
+    top: 0.5em;
+    width: 45%;
+  }
+  &:before {
+    right: 1.5%;
+  }
+  &:after {
+    left: 1.5%;
+  }
 
   @media screen and (min-width: 700px) {
     font-size: 1.5rem;

@@ -37,7 +37,9 @@ export default function ProjectList() {
                 <ProjectTechnologies>
                   {project.technologies.map((technology) => {
                     return (
-                      <ProjectTechnology>{technology.name}</ProjectTechnology>
+                      <ProjectTechnology key={technology.id}>
+                        {technology.name}
+                      </ProjectTechnology>
                     );
                   })}
                 </ProjectTechnologies>

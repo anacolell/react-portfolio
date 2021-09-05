@@ -17,7 +17,6 @@ export const Project = styled.div`
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    /* width: 85%; */
     justify-content: space-between;
   }
 `;
