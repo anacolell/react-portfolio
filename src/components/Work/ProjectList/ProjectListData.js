@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    img: "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFjb29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    img: "images/landing.png",
     alt: "Project1",
     title: "Travel Landing page",
     description:
@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     id: 2,
-    img: "https://images.unsplash.com/photo-1615812214207-34e3be6812df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFjb29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    img: "images/nasa.png",
     alt: "Project1",
     title: "Nasa APOD",
     description:
@@ -57,7 +57,7 @@ export const projects = [
   },
   {
     id: 3,
-    img: "https://images.unsplash.com/photo-1563301141-3fb8b3b2df9e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFjb29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    img: "images/recipely.png",
     alt: "Project1",
     title: "Recipely",
     description:
@@ -85,7 +85,7 @@ export const projects = [
   },
   {
     id: 4,
-    img: "https://images.unsplash.com/photo-1582462232426-15df92a418b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJhY29vbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    img: "images/locally.png",
     alt: "Project1",
     title: "Locally",
     description:
