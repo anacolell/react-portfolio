@@ -9,7 +9,7 @@ export default function Work() {
   return (
     <>
       <Container>
-        <WorkContent>
+        <WorkContent id="projects">
           <SectionTitle>
             <NumberSpan>01.</NumberSpan>My projects
           </SectionTitle>

@@ -7,7 +7,6 @@ import cv from "../../Documents/cv.pdf";
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -43,29 +42,44 @@ export default function Navbar() {
       <IconContext.Provider value={{ color: "var(--green)" }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/">AC</NavLogo>
             <MobileIcon onClick={handleClick}>
               {clicked ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} clicked={clicked}>
               <NavItem>
-                <NavLinks to="/about">
-                  <NumberSpan>01.</NumberSpan>About
+                <NavLinks
+                  to="projects"
+                  smooth={true}
+                  duration={600}
+                  spy={true}
+                  exact="true"
+                  // offset={-60}
+                >
+                  <NumberSpan>01.</NumberSpan>Projects
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/work">
-                  <NumberSpan>02.</NumberSpan>Projects
+                <NavLinks
+                  to="skills"
+                  smooth={true}
+                  duration={700}
+                  spy={true}
+                  exact="true"
+                  // offset={-60}
+                >
+                  <NumberSpan>02.</NumberSpan>Skills
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/skills">
-                  <NumberSpan>03.</NumberSpan>Skills
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/contact">
-                  <NumberSpan>04.</NumberSpan> Contact
+                <NavLinks
+                  to="contact"
+                  smooth={true}
+                  duration={800}
+                  spy={true}
+                  exact="true"
+                  // offset={-60}
+                >
+                  <NumberSpan>03.</NumberSpan> Contact
                 </NavLinks>
               </NavItem>
               <NavItemBtn>

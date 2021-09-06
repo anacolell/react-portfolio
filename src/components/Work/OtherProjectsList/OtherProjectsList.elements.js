@@ -3,28 +3,26 @@ import styled from "styled-components";
 export const ProjectCards = styled.div`
   margin: 0 auto;
   margin-top: 50px;
-  /* margin-bottom: 80px; */
+  width: 60%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
 
-  @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
   @media (min-width: 980px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
 export const Project = styled.div`
   width: 100%;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   color: var(--lightblue);
   background-color: var(--mediumblue);
   padding: 20px;
   transition: all 0.3s ease;
+  position: relative;
 
   &:hover {
     transform: translateY(-5px);
@@ -36,7 +34,9 @@ export const Project = styled.div`
   }
 `;
 
-export const ProjectInfo = styled.div``;
+export const ProjectInfo = styled.div`
+  margin-top: 20px;
+`;
 
 export const ProjectTitle = styled.h3`
   margin-bottom: 20px;
@@ -48,6 +48,7 @@ export const ProjectDescription = styled.p`
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   color: var(--blue);
+  line-height: 1.4;
 `;
 
 export const ProjectTechnologies = styled.ul`
@@ -56,19 +57,28 @@ export const ProjectTechnologies = styled.ul`
   flex-wrap: wrap;
   margin: 25px 0px 10px;
   padding: 0px;
+  position: absolute;
+  bottom: 46px;
 `;
 
 export const ProjectTechnology = styled.li`
-  margin-right: 10px;
+  color: var(--blue);
+  font-size: 0.95rem;
+  margin-right: 20px;
 `;
 
 export const LinkWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  bottom: 16px;
+  right: 20px;
 `;
 
 export const ProjectLink = styled.a`
   color: var(--green);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-left: 20px;
+
+  &:hover {
+    color: var(--lightgreen);
+  }
 `;

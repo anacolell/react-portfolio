@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Container } from "../../globalStyles";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export const HeroContainer = styled(Container)`
   background-color: var(--darkblue);

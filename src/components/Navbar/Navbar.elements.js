@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
@@ -12,10 +12,9 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled(Container)`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 70px;
   padding-top: 20px;
-
   ${Container}
 `;
 

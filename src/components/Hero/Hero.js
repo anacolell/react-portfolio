@@ -13,11 +13,11 @@ import {
 export default function Hero() {
   return (
     <>
-      <HeroContainer>
+      <HeroContainer id="home">
         <HeroContent>
           <HeroTitle>Hi, my name is</HeroTitle>
           <HeroSubtitle>Ana Colell.</HeroSubtitle>
-          <HeroSubtitle2>Lorem ipsum dolor sit amet.</HeroSubtitle2>
+          <HeroSubtitle2>I'm a full-stack web developer.</HeroSubtitle2>
           <HeroText>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo
             perferendis ullam deleniti. Deleniti, voluptate. Vel laudantium
@@ -25,7 +25,15 @@ export default function Hero() {
             Officiis perspiciatis aliquam provident.
           </HeroText>
         </HeroContent>
-        <HeroBtnLink to="/work">
+        <HeroBtnLink
+          to="projects"
+          smooth={true}
+          duration={600}
+          spy={true}
+          exact="true"
+          // offset={-60}
+        >
+          >
           <Button big fontBig>
             See my work
           </Button>

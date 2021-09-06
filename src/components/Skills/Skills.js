@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <>
       <Container>
-        <SkillsContent>
+        <SkillsContent id="skills">
           <SectionTitle>
             <NumberSpan>02. </NumberSpan>Skills
           </SectionTitle>

@@ -11,13 +11,15 @@ export const Project = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  margin-top: 40px;
   color: var(--lightblue);
   transition: all 0.3s ease;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 30px;
   }
 `;
 
@@ -28,18 +30,17 @@ export const ProjectImg = styled.img`
 `;
 
 export const ProjectImgWrapper = styled.a`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     width: 55%;
     order: ${({ position }) => position};
   }
 `;
 
 export const ProjectInfo = styled.div`
-  background-color: var(--mediumblue);
   padding: 20px;
   max-height: 250px;
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 992px) {
     width: 40%;
     margin-top: 40px;
   }
@@ -53,7 +54,10 @@ export const ProjectTitle = styled.h3`
 
 export const ProjectDescription = styled.p`
   font-family: "Montserrat", sans-serif;
+  background-color: var(--mediumblue);
+  padding: 20px;
   font-size: 0.9rem;
+  line-height: 1.4;
   color: var(--blue);
 `;
 
@@ -66,7 +70,10 @@ export const ProjectTechnologies = styled.ul`
 `;
 
 export const ProjectTechnology = styled.li`
-  margin-right: 10px;
+  margin-right: 16px;
+  margin-bottom: 10px;
+  color: var(--blue);
+  font-size: 0.95rem;
 `;
 
 export const LinkWrapper = styled.div`
@@ -78,4 +85,7 @@ export const ProjectLink = styled.a`
   color: var(--green);
   font-size: 1.5rem;
   margin-left: 20px;
+  &:hover {
+    color: var(--lightgreen);
+  }
 `;
