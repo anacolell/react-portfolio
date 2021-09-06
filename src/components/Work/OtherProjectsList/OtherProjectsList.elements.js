@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const ProjectCards = styled.div`
   margin: 0 auto;
   margin-top: 50px;
-  width: 60%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
 
   @media (min-width: 980px) {
+    width: 60%;
     grid-template-columns: 1fr 1fr;
   }
 `;
@@ -52,7 +53,6 @@ export const ProjectDescription = styled.p`
 `;
 
 export const ProjectTechnologies = styled.ul`
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 25px 0px 10px;

@@ -62,7 +62,6 @@ export const ProjectDescription = styled.p`
 `;
 
 export const ProjectTechnologies = styled.ul`
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 25px 0px 10px;

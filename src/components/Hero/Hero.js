@@ -1,5 +1,8 @@
 import React from "react";
 import { Button } from "../../globalStyles";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { BiEnvelope } from "react-icons/bi";
+import { BsDash } from "react-icons/bs";
 import {
   HeroContainer,
   HeroContent,
@@ -8,6 +11,8 @@ import {
   HeroSubtitle2,
   HeroText,
   HeroBtnLink,
+  SocialIconsList,
+  SocialIcon,
 } from "./Hero.elements";
 
 export default function Hero() {
@@ -33,11 +38,24 @@ export default function Hero() {
           exact="true"
           // offset={-60}
         >
-          >
           <Button big fontBig>
             See my work
           </Button>
         </HeroBtnLink>
+        <SocialIconsList>
+          <SocialIcon href="https://github.com/anacolell" target="_blank">
+            <BsDash />
+            <FiGithub />
+          </SocialIcon>
+          <SocialIcon href="https://linkedin.com/in/anacolell" target="_blank">
+            <BsDash />
+            <FiLinkedin />
+          </SocialIcon>
+          <SocialIcon href={`mailto:anacolell8@gmail.com`}>
+            <BsDash />
+            <BiEnvelope />
+          </SocialIcon>
+        </SocialIconsList>
       </HeroContainer>
     </>
   );

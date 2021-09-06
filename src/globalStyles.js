@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
+    list-style: none;
 }
 
 body {

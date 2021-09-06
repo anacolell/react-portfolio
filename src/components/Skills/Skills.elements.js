@@ -12,7 +12,6 @@ export const SkillsList = styled.ul`
   width: 100%;
   margin: 0 auto;
   padding-top: 50px;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

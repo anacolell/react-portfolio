@@ -39,7 +39,6 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  list-style: none;
   text-align: center;
 
   @media screen and (max-width: 960px) {
