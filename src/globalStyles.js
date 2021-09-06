@@ -1,14 +1,26 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-:root {
-    --darkblue: #09172b;
-    --green: #64fcd6;
-    --lightgreen: #d1fce9;
-    --lightblue: #cfd9f7;
-    --mediumblue: #122544;
-    --blue: #a4acc4;
+.dark-theme {
+  --darkblue: #09172b;
+  --green: #64fcd6;
+  --lightgreen: #d1fce9;
+  --lightblue: #cfd9f7;
+  --mediumblue: #122544;
+  --blue: #a4acc4;
+  --white: #fff;
 }
+
+.light-theme {
+  --darkblue: #fff;
+  --green: #64fcd6;
+  --lightgreen: #d1fce9;
+  --lightblue: #122544;
+  --mediumblue: gray;
+  --blue: #09172b;
+  --white: lightgray;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

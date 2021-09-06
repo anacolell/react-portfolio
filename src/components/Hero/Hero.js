@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "../../globalStyles";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMoon, FiSun } from "react-icons/fi";
 import { BiEnvelope } from "react-icons/bi";
 import { BsDash } from "react-icons/bs";
 import {
@@ -13,9 +13,32 @@ import {
   HeroBtnLink,
   SocialIconsList,
   SocialIcon,
+  LightDarkMode,
+  MoonIcon,
+  SunIcon,
+  Ball,
 } from "./Hero.elements";
 
 export default function Hero() {
+  const [theme, setTheme] = useState("dark-theme");
+  const [checked, setChecked] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
+
+  function themeToggler() {
+    if (theme === "light-theme") {
+      setTheme("dark-theme");
+      setChecked(false);
+      console.log(checked);
+    } else {
+      setTheme("light-theme");
+      setChecked(true);
+      console.log(checked);
+    }
+  }
+
   return (
     <>
       <HeroContainer id="home">
@@ -36,7 +59,6 @@ export default function Hero() {
           duration={600}
           spy={true}
           exact="true"
-          // offset={-60}
         >
           <Button big fontBig>
             See my work
@@ -56,6 +78,15 @@ export default function Hero() {
             <BiEnvelope />
           </SocialIcon>
         </SocialIconsList>
+        <LightDarkMode onClick={themeToggler}>
+          <MoonIcon>
+            <FiMoon />
+          </MoonIcon>
+          <SunIcon>
+            <FiSun />
+          </SunIcon>
+          <Ball checked={checked === true ? "translateX(30px)" : ""} />
+        </LightDarkMode>
       </HeroContainer>
     </>
   );

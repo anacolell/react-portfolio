@@ -8,22 +8,14 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 `;
 
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: flex-end;
   height: 70px;
-  padding-top: 20px;
   ${Container}
-`;
-
-export const NavLogo = styled(Link)`
-  color: var(--lightblue);
-  justify-self: flex-start;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
 `;
 
 export const MobileIcon = styled.div`
@@ -66,7 +58,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   text-decoration: none;

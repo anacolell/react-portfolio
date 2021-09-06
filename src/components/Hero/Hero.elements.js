@@ -96,3 +96,40 @@ export const SocialIcon = styled.a`
     color: var(--green);
   }
 `;
+
+export const LightDarkMode = styled.div`
+  position: fixed;
+  right: 20px;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--mediumblue);
+  border-radius: 50px;
+  cursor: pointer;
+  width: 60px;
+  height: 28px;
+  font-size: 1rem;
+`;
+
+export const MoonIcon = styled.div`
+  color: var(--lightblue);
+  margin-left: 5px;
+`;
+
+export const SunIcon = styled.div`
+  color: var(--lightblue);
+  margin-right: 5px;
+`;
+
+export const Ball = styled.div`
+  background-color: var(--white);
+  transform: ${({ checked }) => checked};
+  position: absolute;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  left: 5px;
+  transition: transform 0.2s linear;
+  z-index: 999;
+`;
