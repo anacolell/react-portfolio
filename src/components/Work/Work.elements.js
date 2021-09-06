@@ -13,7 +13,7 @@ export const WorkContent = styled.section`
 `;
 
 export const OtherProjectsTitle = styled.h4`
-  color: var(--lightblue);
+  color: var(--title);
   font-size: 1.2rem;
   margin: 20px 0;
   text-align: center;

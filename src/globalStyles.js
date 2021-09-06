@@ -2,23 +2,43 @@ import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 .dark-theme {
-  --darkblue: #09172b;
-  --green: #64fcd6;
-  --lightgreen: #d1fce9;
-  --lightblue: #cfd9f7;
-  --mediumblue: #122544;
-  --blue: #a4acc4;
-  --white: #fff;
+  --background: #09172b;
+  --themeicons: #fff;
+  --switch: #3a557f;
+  --ball: #fff;
+  --title: #cfd9f7;  
+  --icons: #a4acc4;
+  --iconhover: #64fcd6;
+  --btn: #64fcd6;
+  --btntexthover: #d1fce9;
+  --navtext: #fff;
+  --navtexthover:#64fcd6; 
+  --numberspan: #64fcd6;
+  --sectionline: #64fcd6;
+  --projectlink: #64fcd6;
+  --projectlinkhover: #d1fce9;
+  --projectbackground: #122544;
+  --mobileicon: #cfd9f7;
 }
 
-.light-theme {
-  --darkblue: #fff;
-  --green: #64fcd6;
-  --lightgreen: #d1fce9;
-  --lightblue: #122544;
-  --mediumblue: gray;
-  --blue: #09172b;
-  --white: lightgray;
+.light-theme { 
+  --background: #EEE7E1; 
+  --themeicons: #fff;
+  --switch: #808080;
+  --ball: #fff;
+  --title: #1A1919;
+  --icons: #1A1919;
+  --btn: #1A1919;
+  --navtext: #808080;
+  --navtexthover: #1A1919;
+  --numberspan: #1A1919;
+  --btntexthover: #eee7e1;
+  --sectionline: #000;
+  --iconhover: #1A1919;  
+  --projectlink: #1A1919;
+  --projectlinkhover: #808080;
+  --projectbackground: #f4f0ed;
+  --mobileicon: #1A1919;
 }
 
 * {
@@ -31,12 +51,12 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  background-color: var(--darkblue)
+  background-color: var(--background)
 }
 `;
 
 export const Container = styled.div`
-  background-color: var(--darkblue);
+  background-color: var(--background);
   width: 100%;
   margin: 0 auto;
   @media screen and (max-width: 991px) {
@@ -47,25 +67,26 @@ export const Container = styled.div`
 export const Button = styled.button`
   border-radius: 4px;
   background: transparent;
-  border: 1px solid var(--green);
+  border: 1px solid var(--btn);
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-  color: var(--green);
+  color: var(--btn);
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   cursor: pointer;
   transition: all 0.3 ease-out;
 
   &:hover {
+    color: var(--btntexthover);
     background: #133040;
   }
 `;
 
 export const NumberSpan = styled.span`
-  color: var(--green);
+  color: var(--numberspan);
   padding-right: 3px;
 `;
 
 export const SectionTitle = styled.h3`
-  color: var(--lightblue);
+  color: var(--title);
   font-size: 1.3rem;
   margin-bottom: 60px;
   font-family: "Montserrat", sans-serif;
@@ -75,7 +96,7 @@ export const SectionTitle = styled.h3`
 
   &:before,
   &:after {
-    border-top: 1px solid var(--green);
+    border-top: 1px solid var(--sectionline);
     opacity: 0.3;
     content: "";
     position: relative;

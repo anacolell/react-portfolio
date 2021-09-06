@@ -3,7 +3,6 @@ import { Container } from "../../globalStyles";
 import { Link } from "react-scroll";
 
 export const HeroContainer = styled(Container)`
-  background-color: var(--darkblue);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,7 +28,7 @@ export const HeroContent = styled.section`
 export const HeroTitle = styled.h1`
   font-size: 1rem;
   font-weight: 300;
-  color: var(--green);
+  color: var(--title);
   margin-bottom: 26px;
 
   @media screen and (min-width: 768px) {
@@ -39,7 +38,7 @@ export const HeroTitle = styled.h1`
 
 export const HeroSubtitle = styled.h2`
   font-size: 2rem;
-  color: var(--lightblue);
+  color: var(--title);
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
 
@@ -50,7 +49,7 @@ export const HeroSubtitle = styled.h2`
 
 export const HeroSubtitle2 = styled.h2`
   font-size: 2rem;
-  color: var(--blue);
+  color: var(--icons);
   font-family: "Montserrat", sans-serif;
 
   @media screen and (min-width: 768px) {
@@ -60,7 +59,7 @@ export const HeroSubtitle2 = styled.h2`
 
 export const HeroText = styled.p`
   font-size: 1rem;
-  color: var(--blue);
+  color: var(--icons);
   margin-top: 26px;
   max-width: 80%;
   @media screen and (min-width: 768px) {
@@ -84,7 +83,7 @@ export const SocialIconsList = styled.ul`
 `;
 
 export const SocialIcon = styled.a`
-  color: var(--blue);
+  color: var(--icons);
   margin-bottom: 16px;
   margin-left: -2px;
   font-weight: 300;
@@ -93,37 +92,48 @@ export const SocialIcon = styled.a`
 
   &:hover {
     transform: translateY(-3px);
-    color: var(--green);
+    color: var(--iconhover);
   }
 `;
 
 export const LightDarkMode = styled.div`
   position: fixed;
-  right: 20px;
-  top: 30%;
+  top: 20px;
+  right: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--mediumblue);
+  background-color: var(--switch);
   border-radius: 50px;
   cursor: pointer;
   width: 60px;
   height: 28px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+
+  @media screen and (min-width: 768px) {
+    right: 20px;
+    top: 30%;
+    transform: rotate(90deg);
+  }
 `;
 
 export const MoonIcon = styled.div`
-  color: var(--lightblue);
+  color: var(--themeicons);
   margin-left: 5px;
+
+  @media screen and (min-width: 768px) {
+    transform: rotate(-70deg);
+  }
 `;
 
 export const SunIcon = styled.div`
-  color: var(--lightblue);
-  margin-right: 5px;
+  color: var(--themeicons);
+  margin-right: 6px;
+  margin-top: 2px;
 `;
 
 export const Ball = styled.div`
-  background-color: var(--white);
+  background-color: var(--ball);
   transform: ${({ checked }) => checked};
   position: absolute;
   border-radius: 50%;

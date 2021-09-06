@@ -10,12 +10,12 @@ export const FooterContent = styled.div`
 `;
 
 export const FooterText = styled.p`
-  color: var(--blue);
+  color: var(--icons);
   font-size: 0.9rem;
 `;
 
 export const HeartIcon = styled.i`
-  color: var(--green);
+  color: var(--icons);
   margin-left: 6px;
   font-size: 1rem;
 `;
@@ -29,7 +29,7 @@ export const SocialIconsList = styled.ul`
 `;
 
 export const SocialIcon = styled.a`
-  color: var(--blue);
+  color: var(--icons);
   padding: 0 14px;
   font-weight: 300;
   font-size: 22px;
@@ -37,6 +37,6 @@ export const SocialIcon = styled.a`
 
   &:hover {
     transform: translateY(-3px);
-    color: var(--green);
+    color: var(--iconhover);
   }
 `;

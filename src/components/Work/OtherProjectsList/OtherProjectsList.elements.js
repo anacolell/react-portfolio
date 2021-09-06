@@ -19,10 +19,10 @@ export const Project = styled.div`
   min-height: 300px;
   display: flex;
   flex-direction: column;
-  color: var(--lightblue);
-  background-color: var(--mediumblue);
+  color: var(--title);
+  background-color: var(--projectbackground);
   padding: 20px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
   position: relative;
 
   &:hover {
@@ -48,7 +48,7 @@ export const ProjectTitle = styled.h3`
 export const ProjectDescription = styled.p`
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
-  color: var(--blue);
+  color: var(--icons);
   line-height: 1.4;
 `;
 
@@ -62,7 +62,7 @@ export const ProjectTechnologies = styled.ul`
 `;
 
 export const ProjectTechnology = styled.li`
-  color: var(--blue);
+  color: var(--icons);
   font-size: 0.95rem;
   margin-right: 20px;
 `;
@@ -74,11 +74,11 @@ export const LinkWrapper = styled.div`
 `;
 
 export const ProjectLink = styled.a`
-  color: var(--green);
+  color: var(--projectlink);
   font-size: 1.3rem;
   margin-left: 20px;
 
   &:hover {
-    color: var(--lightgreen);
+    color: var(--projectlinkhover);
   }
 `;

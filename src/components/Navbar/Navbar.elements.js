@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
-  background-color: var(--darkblue);
   height: 70px;
   display: flex;
   justify-content: center;
@@ -26,6 +25,7 @@ export const MobileIcon = styled.div`
     align-items: center;
     cursor: pointer;
     font-size: 1.5rem;
+    color: var(--mobileicon);
   }
 `;
 export const NavMenu = styled.ul`
@@ -43,7 +43,7 @@ export const NavMenu = styled.ul`
     left: ${({ clicked }) => (clicked ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: var(--darkblue);
+    background: var(--background);
   }
 `;
 
@@ -58,15 +58,16 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: var(--white);
+  color: var(--navtext);
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  cursor: pointer;
 
   &:hover {
-    color: var(--green);
+    color: var(--navtexthover);
   }
 
   @media screen and (max-width: 960px) {

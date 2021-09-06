@@ -13,8 +13,7 @@ export const Project = styled.div`
   flex-direction: column;
   margin-bottom: 80px;
   margin-top: 40px;
-  color: var(--lightblue);
-  transition: all 0.3s ease;
+  color: var(--title);
 
   @media screen and (min-width: 992px) {
     flex-direction: row;
@@ -54,11 +53,11 @@ export const ProjectTitle = styled.h3`
 
 export const ProjectDescription = styled.p`
   font-family: "Montserrat", sans-serif;
-  background-color: var(--mediumblue);
+  background-color: var(--projectbackground);
   padding: 20px;
   font-size: 0.9rem;
   line-height: 1.4;
-  color: var(--blue);
+  color: var(--icons);
 `;
 
 export const ProjectTechnologies = styled.ul`
@@ -71,7 +70,7 @@ export const ProjectTechnologies = styled.ul`
 export const ProjectTechnology = styled.li`
   margin-right: 16px;
   margin-bottom: 10px;
-  color: var(--blue);
+  color: var(--icons);
   font-size: 0.95rem;
 `;
 
@@ -81,10 +80,10 @@ export const LinkWrapper = styled.div`
 `;
 
 export const ProjectLink = styled.a`
-  color: var(--green);
+  color: var(--projectlink);
   font-size: 1.5rem;
   margin-left: 20px;
   &:hover {
-    color: var(--lightgreen);
+    color: var(--projectlinkhover);
   }
 `;

@@ -29,17 +29,16 @@ export const Skill = styled.li`
   font-size: 3rem;
   margin-right: 20px;
   margin-bottom: 30px;
-  color: var(--blue);
+  color: var(--icons);
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-5px);
-    color: var(--green);
+    color: var(--iconhover);
   }
 
   &:hover SkillName {
-    color: var(--green);
-    opacity: 1;
+    color: var(--iconhover);
   }
 
   @media screen and (min-width: 700px) {

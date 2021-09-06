@@ -24,7 +24,7 @@ export const ContactWrapper = styled.div`
 
 export const ContactTitle = styled.h3`
   font-size: 1.3rem;
-  color: var(--blue);
+  color: var(--icons);
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   @media screen and (min-width: 700px) {
