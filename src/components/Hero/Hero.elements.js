@@ -28,7 +28,7 @@ export const HeroContent = styled.section`
 export const HeroTitle = styled.h1`
   font-size: 1rem;
   font-weight: 300;
-  color: var(--title);
+  color: var(--projectlink);
   margin-bottom: 26px;
 
   @media screen and (min-width: 768px) {
@@ -49,7 +49,7 @@ export const HeroSubtitle = styled.h2`
 
 export const HeroSubtitle2 = styled.h2`
   font-size: 2rem;
-  color: var(--icons);
+  color: var(--subtitle);
   font-family: "Montserrat", sans-serif;
 
   @media screen and (min-width: 768px) {
@@ -61,6 +61,7 @@ export const HeroText = styled.p`
   font-size: 1rem;
   color: var(--icons);
   margin-top: 26px;
+  line-height: 1.4;
   max-width: 80%;
   @media screen and (min-width: 768px) {
     max-width: 60%;
@@ -98,7 +99,7 @@ export const SocialIcon = styled.a`
 
 export const LightDarkMode = styled.div`
   position: absolute;
-  top: 20px;
+  top: 22px;
   right: 78%;
   display: flex;
   align-items: center;

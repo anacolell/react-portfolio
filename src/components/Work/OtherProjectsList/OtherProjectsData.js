@@ -7,7 +7,7 @@ export const otherProjects = [
     description:
       "First version of my portfolio built with React and styled components.",
     githubLink: "https://github.com/anacolell/react-portfolio",
-    liveLink: "https://www.github.com/anacolell",
+    liveLink: "https://www.anacolell.dev",
     technologies: [
       {
         id: 1,

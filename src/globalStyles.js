@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
   --switch: #3a557f;
   --ball: #fff;
   --title: #cfd9f7;  
+  --subtitle: #a4acc4;
   --icons: #a4acc4;
   --iconhover: #64fcd6;
   --btn: #64fcd6;
@@ -27,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
   --switch: #808080;
   --ball: #fff;
   --title: #1A1919;
+  --subtitle: #444444;
   --icons: #1A1919;
   --btn: #1A1919;
   --navtext: #808080;

@@ -45,12 +45,11 @@ export default function Hero() {
         <HeroContent>
           <HeroTitle>Hi, my name is</HeroTitle>
           <HeroSubtitle>Ana Colell.</HeroSubtitle>
-          <HeroSubtitle2>I'm a full-stack web developer.</HeroSubtitle2>
+          <HeroSubtitle2>I make web applications.</HeroSubtitle2>
           <HeroText>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo
-            perferendis ullam deleniti. Deleniti, voluptate. Vel laudantium
-            maxime autem repellat modi corporis optio temporibus rem ipsam!
-            Officiis perspiciatis aliquam provident.
+            I'm a full-stack web developer with a languages background currently
+            living in Greece. I love combining the worlds of logic and creative
+            design to make clean and user-friendly websites and applications.
           </HeroText>
         </HeroContent>
         <HeroBtnLink
