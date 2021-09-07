@@ -99,7 +99,7 @@ export const SocialIcon = styled.a`
 export const LightDarkMode = styled.div`
   position: absolute;
   top: 20px;
-  right: 80%;
+  right: 78%;
   display: flex;
   align-items: center;
   justify-content: space-between;

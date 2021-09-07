@@ -20,22 +20,22 @@ import {
 } from "./Hero.elements";
 
 export default function Hero() {
-  const [theme, setTheme] = useState("dark-theme");
-  const [checked, setChecked] = useState(false);
+  const [theme, setTheme] = useState(getTheme());
+
+  function getTheme() {
+    return JSON.parse(localStorage.getItem("theme")) || "dark-theme";
+  }
 
   useEffect(() => {
+    localStorage.setItem("theme", JSON.stringify(theme));
     document.documentElement.className = theme;
   }, [theme]);
 
   function themeToggler() {
     if (theme === "light-theme") {
       setTheme("dark-theme");
-      setChecked(false);
-      console.log(checked);
     } else {
       setTheme("light-theme");
-      setChecked(true);
-      console.log(checked);
     }
   }
 
@@ -85,7 +85,7 @@ export default function Hero() {
           <SunIcon>
             <FiSun />
           </SunIcon>
-          <Ball checked={checked === true ? "translateX(30px)" : ""} />
+          <Ball checked={theme === "light-theme" ? "translateX(30px)" : ""} />
         </LightDarkMode>
       </HeroContainer>
     </>

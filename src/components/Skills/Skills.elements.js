@@ -12,12 +12,13 @@ export const SkillsList = styled.ul`
   width: 100%;
   margin: 0 auto;
   padding-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 996px) {
     width: 60%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;
 
@@ -27,23 +28,16 @@ export const Skill = styled.li`
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  margin-right: 20px;
-  margin-bottom: 30px;
   color: var(--icons);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: translateY(-5px) translate3d(0, 0, 0);
     color: var(--iconhover);
   }
 
-  /* &:hover SkillName {
-    color: var(--iconhover);
-  } */
-
   @media screen and (min-width: 700px) {
     font-size: 5rem;
-    margin-right: 40px;
   }
 `;
 

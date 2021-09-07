@@ -14,6 +14,7 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: flex-end;
   height: 70px;
+  width: 100%;
   ${Container}
 `;
 
@@ -28,6 +29,7 @@ export const MobileIcon = styled.div`
     color: var(--mobileicon);
   }
 `;
+
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
