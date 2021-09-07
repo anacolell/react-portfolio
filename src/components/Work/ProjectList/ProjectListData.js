@@ -1,26 +1,6 @@
 export const projects = [
   {
     id: 1,
-    img: "images/landing.png",
-    alt: "Project1",
-    title: "Travel Landing page",
-    description:
-      "A simple react landing page showcasing the services of a ficticious travel agency. Completely built with hooks and functional components.",
-    githubLink: "https://github.com/anacolell/landing-page",
-    liveLink: "https://travel-gr.herokuapp.com/",
-    technologies: [
-      {
-        id: 1,
-        name: "React",
-      },
-      {
-        id: 2,
-        name: "CSS",
-      },
-    ],
-  },
-  {
-    id: 2,
     img: "images/nasa.png",
     alt: "Project1",
     title: "Nasa APOD",
@@ -52,7 +32,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     img: "images/recipely.png",
     alt: "Project1",
     title: "Recipely",
@@ -88,7 +68,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     img: "images/repo.png",
     alt: "Project1",
     title: "Github Repo Gallery",
@@ -111,6 +91,26 @@ export const projects = [
       },
       {
         id: 4,
+        name: "CSS",
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: "images/landing.png",
+    alt: "Project1",
+    title: "Travel Landing page",
+    description:
+      "A simple react landing page showcasing the services of a ficticious travel agency. Completely built with hooks and functional components.",
+    githubLink: "https://github.com/anacolell/landing-page",
+    liveLink: "https://travel-gr.herokuapp.com/",
+    technologies: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
         name: "CSS",
       },
     ],
