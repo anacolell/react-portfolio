@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const ProjectCards = styled.div`
   margin: 0 auto;
   margin-top: 50px;
-  width: 80%;
+  width: 94%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 16px;
 
-  @media (min-width: 980px) {
-    width: 60%;
+  @media screen and (min-width: 992px) {
+    width: 65%;
     grid-template-columns: 1fr 1fr;
   }
 `;
@@ -26,7 +26,7 @@ export const Project = styled.div`
   position: relative;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) translate3d(0, 0, 0);
   }
 
   @media screen and (min-width: 768px) {

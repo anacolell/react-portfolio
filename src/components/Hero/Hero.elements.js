@@ -97,7 +97,7 @@ export const SocialIcon = styled.a`
 `;
 
 export const LightDarkMode = styled.div`
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 80%;
   display: flex;
@@ -111,6 +111,7 @@ export const LightDarkMode = styled.div`
   font-size: 1.2rem;
 
   @media screen and (min-width: 768px) {
+    position: fixed;
     right: 20px;
     top: 30%;
     transform: rotate(90deg);

@@ -33,13 +33,13 @@ export const Skill = styled.li`
   transition: all 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) translate3d(0, 0, 0);
     color: var(--iconhover);
   }
 
-  &:hover SkillName {
+  /* &:hover SkillName {
     color: var(--iconhover);
-  }
+  } */
 
   @media screen and (min-width: 700px) {
     font-size: 5rem;
@@ -49,7 +49,6 @@ export const Skill = styled.li`
 
 export const SkillName = styled.p`
   font-size: 0.8rem;
-  opacity: 1;
 
   @media screen and (min-width: 700px) {
     font-size: 1rem;

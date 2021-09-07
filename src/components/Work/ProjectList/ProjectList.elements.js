@@ -11,11 +11,10 @@ export const Project = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
-  margin-top: 40px;
+  margin: 40px 0;
   color: var(--title);
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1026px) {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
@@ -29,7 +28,7 @@ export const ProjectImg = styled.img`
 `;
 
 export const ProjectImgWrapper = styled.a`
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1025px) {
     width: 55%;
     order: ${({ position }) => position};
   }
@@ -37,9 +36,9 @@ export const ProjectImgWrapper = styled.a`
 
 export const ProjectInfo = styled.div`
   padding: 20px;
-  max-height: 250px;
+  /* max-height: 250px; */
   width: 100%;
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1925px) {
     width: 40%;
     margin-top: 40px;
   }

@@ -88,6 +88,7 @@ export const NumberSpan = styled.span`
 export const SectionTitle = styled.h3`
   color: var(--title);
   font-size: 1.3rem;
+  margin-top: 30px;
   margin-bottom: 60px;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
