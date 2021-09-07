@@ -38,7 +38,7 @@ export const ProjectInfo = styled.div`
   padding: 20px;
   /* max-height: 250px; */
   width: 100%;
-  @media screen and (min-width: 1925px) {
+  @media screen and (min-width: 1025px) {
     width: 40%;
     margin-top: 40px;
   }
