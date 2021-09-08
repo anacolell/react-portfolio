@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../../globalStyles";
+import { animateScroll as scroll } from "react-scroll";
 import { FiGithub, FiLinkedin, FiMoon, FiSun } from "react-icons/fi";
 import { BiEnvelope } from "react-icons/bi";
+import { MdKeyboardArrowUp } from "react-icons/md";
 import { BsDash } from "react-icons/bs";
 import {
   HeroContainer,
@@ -17,10 +19,12 @@ import {
   MoonIcon,
   SunIcon,
   Ball,
+  ScrollUp,
 } from "./Hero.elements";
 
 export default function Hero() {
   const [theme, setTheme] = useState(getTheme());
+  const [arrow, setArrow] = useState(false);
 
   function getTheme() {
     return JSON.parse(localStorage.getItem("theme")) || "dark-theme";
@@ -38,6 +42,25 @@ export default function Hero() {
       setTheme("light-theme");
     }
   }
+
+  function showArrow() {
+    if (window.scrollY > 1000) {
+      setArrow(true);
+    } else {
+      setArrow(false);
+    }
+  }
+
+  function scrollUp() {
+    scroll.scrollToTop();
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", showArrow);
+    return () => {
+      window.removeEventListener("scroll", showArrow);
+    };
+  }, []);
 
   return (
     <>
@@ -86,6 +109,11 @@ export default function Hero() {
           </SunIcon>
           <Ball checked={theme === "light-theme" ? "translateX(30px)" : ""} />
         </LightDarkMode>
+        {arrow && (
+          <ScrollUp to="/" onClick={scrollUp}>
+            <MdKeyboardArrowUp />
+          </ScrollUp>
+        )}
       </HeroContainer>
     </>
   );

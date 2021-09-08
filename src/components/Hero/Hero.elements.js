@@ -79,7 +79,7 @@ export const SocialIconsList = styled.ul`
     flex-direction: column;
     position: fixed;
     left: 0;
-    top: 70%;
+    bottom: 12%;
   }
 `;
 
@@ -144,4 +144,23 @@ export const Ball = styled.div`
   left: 5px;
   transition: transform 0.2s linear;
   z-index: 999;
+`;
+
+export const ScrollUp = styled(Link)`
+  font-size: 2.5rem;
+  position: fixed;
+  right: 7px;
+  bottom: 5%;
+  cursor: pointer;
+  color: var(--icons);
+  transition: all 0.4s ease;
+
+  &:hover {
+    color: var(--iconhover);
+    transform: translateY(-5px);
+  }
+  @media screen and (min-width: 768px) {
+    right: 22px;
+    bottom: 5%;
+  }
 `;
