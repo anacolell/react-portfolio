@@ -23,7 +23,7 @@ export const Project = styled.div`
 
 export const ProjectImg = styled.img`
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   object-fit: cover;
 `;
 
@@ -36,7 +36,6 @@ export const ProjectImgWrapper = styled.a`
 
 export const ProjectInfo = styled.div`
   padding: 20px;
-  /* max-height: 250px; */
   width: 100%;
   @media screen and (min-width: 1025px) {
     width: 40%;
