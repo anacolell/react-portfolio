@@ -73,7 +73,7 @@ export const projects = [
     alt: "Project1",
     title: "Github Repo Gallery",
     description:
-      "This project is a visual gallery of my GitHub repos. It fetches from both the REST and the GraphQL API. User profile and repository list are displayed on the main gallery and by clicking on the repos image, users can access them invidually.",
+      "This project is a visual gallery of my GitHub repos. It fetches from both the REST and the GraphQL API. User profile and repository list are displayed on the main gallery and by clicking on the repos image, users can access them invidually. Scripts are bundled with webpack.",
     githubLink: "https://github.com/anacolell/github-repo-gallery",
     liveLink: "https://anas-repo-gallery.netlify.app/",
     technologies: [
@@ -91,6 +91,10 @@ export const projects = [
       },
       {
         id: 4,
+        name: "Webpack",
+      },
+      {
+        id: 5,
         name: "CSS",
       },
     ],
@@ -101,7 +105,7 @@ export const projects = [
     alt: "Project1",
     title: "Travel Landing page",
     description:
-      "A simple react landing page showcasing the services of a ficticious travel agency. Completely built with hooks and functional components.",
+      "A simple react landing page showcasing the services of a travel agency. Completely built with hooks and functional components.",
     githubLink: "https://github.com/anacolell/landing-page",
     liveLink: "https://travel-gr.herokuapp.com/",
     technologies: [
