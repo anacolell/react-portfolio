@@ -37,7 +37,7 @@ export const projects = [
     alt: "Project1",
     title: "Recipely",
     description:
-      "A web application built on the MERN stack. Users can create their own recipes and upload a picture, as well search through the available recipes and sort the results. Images are host on cloudinary.",
+      "A web application built on the MERN stack. Users can create their own recipes and upload a picture, as well as search through the available recipes and sort the results. Images are host on cloudinary.",
     githubLink: "https://github.com/anacolell/myrecipes",
     liveLink: "https://share-recipes-app.herokuapp.com/",
     technologies: [
@@ -121,7 +121,7 @@ export const projects = [
     alt: "Project1",
     title: "Locally",
     description:
-      "This Ruby on Rails app brings together travellers and locals based on their mutual interests. I pitched the project during Le Wagon bootcamp and it was built in a group of three as our final project. ",
+      "This Ruby on Rails app brings together travellers and locals based on their mutual interests. I pitched this project idea during Le Wagon bootcamp and it was built in a team of three as our final project. ",
     githubLink: "https://github.com/anacolell/locally",
     liveLink: "https://www.locally.space/",
     technologies: [
