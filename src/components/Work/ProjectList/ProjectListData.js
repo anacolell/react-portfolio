@@ -107,7 +107,7 @@ export const projects = [
     description:
       "A simple react landing page showcasing the services of a travel agency. Completely built with hooks and functional components.",
     githubLink: "https://github.com/anacolell/landing-page",
-    liveLink: "https://travel-gr.herokuapp.com/",
+    liveLink: "https://travelgr.netlify.app/",
     technologies: [
       {
         id: 1,
