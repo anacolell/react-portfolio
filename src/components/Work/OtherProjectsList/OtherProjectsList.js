@@ -1,5 +1,4 @@
 import React from "react";
-import { otherProjects } from "./OtherProjectsData";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -15,7 +14,7 @@ import {
   ProjectLink,
 } from "./OtherProjectsList.elements";
 
-export default function OtherProjectsList() {
+export default function OtherProjectsList({ otherProjects }) {
   return (
     <>
       <ProjectCards>
