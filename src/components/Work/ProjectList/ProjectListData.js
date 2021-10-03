@@ -118,7 +118,7 @@ export const projects = [
         name: "Mapbox",
       },
       {
-        id: 2,
+        id: 3,
         name: "CSS",
       },
     ],
