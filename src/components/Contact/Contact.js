@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <>
       <Container>
-        <ContactContent id="contact">
+        <ContactContent id="contact" data-testid="contact">
           <SectionTitle>
             <NumberSpan>03.</NumberSpan>Contact
           </SectionTitle>

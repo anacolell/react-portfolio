@@ -15,7 +15,7 @@ import {
 export default function Footer() {
   return (
     <Container>
-      <FooterContent>
+      <FooterContent data-testid="footer">
         <SocialIconsList>
           <SocialIcon href="https://github.com/anacolell" target="_blank">
             <FiGithub />

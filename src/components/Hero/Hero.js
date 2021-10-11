@@ -64,7 +64,7 @@ export default function Hero() {
 
   return (
     <>
-      <HeroContainer id="home">
+      <HeroContainer id="home" data-testid="hero">
         <HeroContent>
           <HeroTitle>Hi, my name is</HeroTitle>
           <HeroSubtitle>Ana Colell.</HeroSubtitle>
