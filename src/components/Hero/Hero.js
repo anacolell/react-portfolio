@@ -70,9 +70,9 @@ export default function Hero() {
           <HeroSubtitle>Ana Colell.</HeroSubtitle>
           <HeroSubtitle2>I make web applications.</HeroSubtitle2>
           <HeroText>
-            I'm a full-stack web developer with a languages background currently
-            living in Greece. I love combining the worlds of logic and creative
-            design to make clean and user-friendly websites and applications.
+            I'm a software engineer with a languages background currently living
+            in Greece. I love combining the worlds of logic and creative design
+            to make clean and user-friendly websites and applications.
           </HeroText>
         </HeroContent>
         <HeroBtnLink
