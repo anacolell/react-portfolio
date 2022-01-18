@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Button, NumberSpan } from "../../globalStyles";
-import cv from "../../Documents/cv.pdf";
+import { NumberSpan } from "../../globalStyles";
+// import cv from "../../Documents/cv.pdf";
 
 import {
   Nav,
@@ -10,31 +10,29 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavItemBtn,
-  NavBtnLink,
 } from "./Navbar.elements";
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
-  const [button, setButton] = useState(true);
+  // const [button, setButton] = useState(true);
 
   function handleClick() {
     setClicked(!clicked);
   }
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+  // const showButton = () => {
+  //   if (window.innerWidth <= 960) {
+  //     setButton(false);
+  //   } else {
+  //     setButton(true);
+  //   }
+  // };
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  // useEffect(() => {
+  //   showButton();
+  // }, []);
 
-  window.addEventListener("resize", showButton);
+  // window.addEventListener("resize", showButton);
 
   return (
     <>
@@ -77,19 +75,19 @@ export default function Navbar() {
                 <NumberSpan>03.</NumberSpan> Contact
               </NavLinks>
             </NavItem>
-            <NavItemBtn>
+            {/*<NavItemBtn>
               {button ? (
                 <NavBtnLink href={cv} target="_blank">
                   <Button>CV</Button>
                 </NavBtnLink>
               ) : (
                 <NavBtnLink href={cv} target="_blank">
-                  <Button big fontBig>
+                  <Button big fontBig disabled>
                     CV
                   </Button>
                 </NavBtnLink>
               )}
-            </NavItemBtn>
+              </NavItemBtn>*/}
           </NavMenu>
         </NavbarContainer>
       </Nav>
