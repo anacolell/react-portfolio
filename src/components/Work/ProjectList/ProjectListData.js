@@ -131,7 +131,7 @@ export const projects = [
     description:
       "This Ruby on Rails app brings together travellers and locals based on their mutual interests. I pitched this project idea during Le Wagon bootcamp and it was built in a team of three as our final project. ",
     githubLink: "https://github.com/anacolell/locally",
-    liveLink: "https://www.locally.space/",
+    liveLink: "https://go-locally.herokuapp.com/",
     technologies: [
       {
         id: 1,
