@@ -12,6 +12,7 @@ export const FooterContent = styled.div`
 export const FooterText = styled.p`
   color: var(--icons);
   font-size: 0.9rem;
+  padding-top: 10px;
 `;
 
 export const HeartIcon = styled.i`
@@ -39,4 +40,9 @@ export const SocialIcon = styled.a`
     transform: translateY(-3px);
     color: var(--iconhover);
   }
+`;
+
+export const FooterLink = styled.a`
+  color: var(--icons);
+  cursor: pointer;
 `;

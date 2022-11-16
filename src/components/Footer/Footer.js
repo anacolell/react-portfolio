@@ -10,6 +10,7 @@ import {
   HeartIcon,
   SocialIconsList,
   SocialIcon,
+  FooterLink,
 } from "./Footer.elements";
 
 export default function Footer() {
@@ -32,6 +33,14 @@ export default function Footer() {
           <HeartIcon>
             <VscHeart />
           </HeartIcon>
+        </FooterText>
+        <FooterText>
+          Inspired by
+          <span>&nbsp;</span>
+          <FooterLink href="https://.brittanychiang.com">
+            Brittany Chiang
+          </FooterLink>
+          's design
         </FooterText>
       </FooterContent>
     </Container>
