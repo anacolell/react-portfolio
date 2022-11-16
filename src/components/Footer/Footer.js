@@ -37,7 +37,7 @@ export default function Footer() {
         <FooterText>
           Inspired by
           <span>&nbsp;</span>
-          <FooterLink href="https://.brittanychiang.com">
+          <FooterLink href="https://www.brittanychiang.com">
             Brittany Chiang
           </FooterLink>
           's design
